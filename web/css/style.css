@@ -1,0 +1,153 @@
+html,
+body,
+section[class='body'] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header, footer {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+.menu-region {
+    display: flex;
+    align-items: center;
+}
+
+.menu-region a {
+    display: inline-block;
+    color: white;
+    padding: 20px;
+}
+
+.menu-region .icon {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.menu-region .search-field {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-region input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    height: 32px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+.menu-region button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    background: url("../../web/img/search.svg") white center no-repeat;
+    -webkit-background-size: 16px;
+    background-size: 16px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-region button:hover {
+    background-color: #c3c3c3;
+    transition: 0.2s;
+}
+
+.menu-region input:focus,
+.menu-region button:focus {
+    outline: none;
+}
+
+footer {
+    margin-top: auto;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    color: white;
+}
+
+@media (max-width: 560px) {
+
+    .menu-region {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-region .search-field {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.goods-region {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media(max-width: 766px) {
+
+    .goods-region {
+        justify-content: center;
+    }
+}
+
+.good-section {
+    width: 315px;
+    min-height: 345px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    margin: 20px 10px;
+}
+
+.good-section .img-region {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 180px;
+    height: 100%;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.good-section .img-region img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.good-section .good-information {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.good-section .good-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.good-buttons .icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
